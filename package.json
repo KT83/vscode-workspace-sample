@@ -1,0 +1,13 @@
+{
+  "name": "vscode-workspace-sample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "KT83",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.2",
+    "typescript": "^5.5.4"
+  }
+}

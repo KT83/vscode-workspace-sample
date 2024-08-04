@@ -16,6 +16,8 @@ import { renderToStaticMarkup } from "react-dom/server";
   const component = getMDXComponent(code);
   const rendered = renderToStaticMarkup(component({}));
 
-  console.log(rendered);
-  fs.writeFileSync("./pages/sample.html", rendered);
+  const templateHtml = fs.readFileSync("./template.html", "utf-8");
+  const finalHtml = templateHtml.replace("<!-- MARK:BODY -->", rendered);
+
+  fs.writeFileSync("./pages/sample.html", finalHtml);
 })();

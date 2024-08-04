@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Bundler",
+    "module": "esnext",
+    "target": "es6",
+    "outDir": "./public/packs/js",
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": ["./pages/"]
+}
